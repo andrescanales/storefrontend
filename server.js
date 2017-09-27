@@ -14,8 +14,8 @@ const LodashTake = require('lodash.take');
 const server = new Hapi.Server();
  
 server.connection({
-    host: '127.0.0.1',
-    port: 3001
+    host: process.env.BASE_URL || '127.0.0.1',
+    port: process.env.PORT || 3001
 });
  
 // Register vision for our views
