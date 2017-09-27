@@ -42,7 +42,7 @@ server.route({
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-        Request.get('http://localhost:3000/products', function (error, response, body) {
+        Request.get('https://store-api-andrescanales.herokuapp.com/products', function (error, response, body) {
             if (error) {
                 throw error;
             }
