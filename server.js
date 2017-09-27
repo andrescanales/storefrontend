@@ -48,7 +48,6 @@ server.route({
             }
  
             const data = JSON.parse(body);
-            console.error(data[0].name);
             reply.view('index', { result: data });
         });
     }
